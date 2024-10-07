@@ -1,0 +1,325 @@
+/* AboutPage.css */
+.about-page {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; 
+    font-family:  Helvetica, sans-serif; 
+    color:#262638;
+    
+}
+
+/* Header Section */
+.header-section {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #001f3f; /* Deep Navy Blue */
+    color: #fff;
+    margin-top: 100px;
+    
+    
+}
+
+.header-section h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color:  #ff6900;
+/*0315*/ 
+}
+
+.big-heading {
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    animation: slideInFromTop 1s ease-out;
+}
+
+.subheading {
+    font-size: 1.25rem;
+    color: #ccc; /* Light Gray for Subheading */
+    margin-top: 1rem;
+    animation: slideInFromBottom 1.2s ease-out; /* Slide from bottom animation */
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    background-color: #fff; /* Ocean Blue */
+}
+
+.about-section p {
+    font-family: 'TT Norms' sans-serif; /* Font family */
+    font-size: 19px; /* Font size */
+    
+    margin-bottom: 2rem; 
+}
+
+
+.about-content {
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem
+}
+
+.about-left, .about-right {
+    flex: 1;
+}
+
+.about-left .title-underline {
+    text-decoration: underline;
+    
+}
+
+.about-left h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-color:  #ff6900;
+    
+}
+
+.about-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.about-column h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-column p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* About Right Image */
+.about-right img {
+    width: 80%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+    padding: 1rem 0;
+    text-align: center;
+    background-color: #e0f7fa; /* ocean Blue */
+}
+
+.how-it-works-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight:800;
+}
+
+.how-it-works-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight:600;
+}
+
+.how-it-works-section p {
+    font-size: 1rem;
+    color: #050505;
+    font-weight:300;
+    margin-bottom: 2rem;
+}
+
+.how-it-works-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.how-it-works-item img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.how-it-works-item h4 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+.how-it-works-item p {
+    font-size: 1rem;
+    color: #474747;
+}
+
+/* Support Team Section */
+.support-team-section {
+    text-align: center;
+    margin: 50px 0 ;
+    background-color: #fff;
+    
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.support-member {
+    position: relative;
+}
+
+.support-member img {
+    width: 80%;
+    border-radius: 8px;
+}
+
+.hover-bubble {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    text-align: center;
+}
+
+.support-member:hover .hover-bubble {
+    opacity: 1;
+}
+
+.hover-bubble p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hover-bubble span {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    text-align: center;
+    margin: 50px 0;
+    background-color: #e0f7fa; /* Ocean Blue */
+    padding: 2rem 0;
+}
+
+.testimonials-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.testimonials-row {
+    display: flex;
+    transition: transform 0.5s linear;
+}
+
+.testimonial-card {
+    width: 320px;
+    padding: 15px;
+    margin: 10px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.testimonial-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-info {
+    text-align: left;
+}
+
+.testimonial-author p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.testimonial-author span {
+    font-size: 12px;
+    color: gray;
+}
+
+.top-row {
+    animation: moveRight 10s linear infinite;
+}
+
+.bottom-row {
+    animation: moveLeft 10s linear infinite;
+}
+
+@keyframes moveRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+@keyframes moveLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+}
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+ 
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   
+    .support-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .testimonial-card {
+        width: 100%;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .how-it-works-columns {
+        grid-template-columns: 1fr;
+    }
+}

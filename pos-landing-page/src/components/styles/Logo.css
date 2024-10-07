@@ -1,0 +1,9 @@
+/* styles/LogoName.css */
+
+.logoName {
+    color: #0f0f0f; /* Default color */
+    font-family: 'Roboto', sans-serif; /* Replace with your chosen font-family */
+    font-size: 1.2rem; /* Adjust size as needed */
+    font-weight: 600;
+  }
+  

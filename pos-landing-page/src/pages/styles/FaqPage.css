@@ -1,0 +1,121 @@
+/* FAQPage.css */
+
+/* Remove default body margin */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Full-page display for the FAQ header */
+.faq-header {
+    text-align: center;
+    background-color: #001f3f; /* Navy blue */
+    color: #fff;
+    padding: 20px 20px;
+    padding-top: 100px;
+    margin: 0; /* Ensure there's no margin */
+     /* Full page height for header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+}
+
+.faq-header h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.faq-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color:  #ff6900;
+}
+
+.faq-header p {
+    font-size: 1.25rem;
+    color: #ccc; /* Light Gray for Subheading */
+    margin-top: 1rem;
+    animation: slideInFromBottom 1.2s ease-out; /* Slide from bottom animation */
+}
+
+/* FAQ List Styling */
+.faq {
+    background-color: #f9f9f9;
+}
+.faq-list {
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: auto;
+     /* Pale pink background for accordion */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    outline: none;
+    padding: 10px 10px;
+    transition: color 0.3s;
+    color: #001f3f;
+    font-size: 2rem;
+}
+
+.faq-question strong {
+    font-weight: bold;
+}
+
+.faq-question:hover {
+    color:  #ff6900;;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+   
+}
+
+.faq-answer {
+    font-size: 1.5rem;
+    color: #3d3d3d;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+.active .faq-question {
+    color:  #ff6900;
+}
+
+.active .faq-answer {
+    display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .faq-header h1 {
+        font-size: 28px;
+    }
+
+    .faq-header p {
+        font-size: 16px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+}

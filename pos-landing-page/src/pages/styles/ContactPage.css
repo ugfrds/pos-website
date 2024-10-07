@@ -1,0 +1,248 @@
+/* ContactPage.css */
+
+/* General Styles */
+.contact-page {
+  font-family:  Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    color: #262638;
+   
+  }
+  
+  /* Header Section */
+  .contact-header {
+    background-color: #001f3f;
+    color: #fff;
+    padding: 50px 0; /* No spaces on sides */
+    padding-top: 100px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    
+  }
+  
+  .contact-header h1 {
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    animation: slideInFromTop 1s ease-out;
+  }
+  
+  .contact-header h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color:  #ff6900;
+    
+  }
+  
+  .contact-header p {
+    font-size: 1.25rem;
+    color: #ccc; /* Light Gray for Subheading */
+    margin-top: 1rem;
+  }
+
+ 
+  
+  /* Cards Section */
+  .cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative; 
+    top: -20px; /* Cards will protrude into the header */
+    z-index: 2;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s;
+    border-radius: 8px;
+    min-height: 220px; /* Ensure consistent height */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 0 20px;
+    
+  }
+  
+  .form-container {
+    max-width: 400px;
+    text-align: left;
+    
+    
+  }
+  
+  .form-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .form-container h1 { 
+    font-size: 36px;
+    
+
+  }
+  
+  .form-container p {
+    font-size: 18px;
+  }
+  
+  .social-icons  ul{
+    display: flex;
+    color: rgb(89, 126, 248); 
+    font-size: 24px;
+    display: flex;
+    list-style: none;
+    padding: 0; 
+     margin: 0;
+  
+  }
+  .social-icons  ul li{
+    
+    margin-right: 20px;
+    
+  
+  }
+  
+  .form {
+    background-color: #007BFF;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px; /* Same width as form container */
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+    width:76%;
+  }
+  
+  .form-group .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #afafaf;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  .button {
+    background-color: #2B2F3E;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .button:hover{
+    background-color: #ff6900;
+
+  }
+  
+  /* Remove extra space around the header */
+  .contact-header, 
+  .cards-section, 
+  .contact-section {
+    margin: 0;
+  }
+
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+ 
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cards-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-section {
+      flex-direction: column;
+    }
+  
+    .form {
+      width: 100%;
+      align-self: center;
+    }
+  
+    .form-container {
+      text-align: center;
+    }
+  
+    .form-container h1 {
+      font-size: 32px;
+    }
+
+    .social-icons  ul {
+    
+      justify-content: center;
+      
+    
+    }
+  
+    .card {
+      width: 80%;
+      min-height: 200px;
+    }
+  }
+  

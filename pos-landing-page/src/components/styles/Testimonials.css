@@ -1,0 +1,108 @@
+.testimonials-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonial-big-card {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.testimonial-big-card h2{
+    text-align: center; 
+    font-family: 'Roboto' sans-serif;
+    font-size: 2.5em;
+    color: #0f0f0f;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+.testimonial-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto; /* Remove bottom margin to prevent extra space */ 
+  align-items: center;
+  min-height: 150px;
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.testimonial-info {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial-message {
+  font-style: italic;
+  margin: 10px 0;
+  white-space: normal;
+  line-height: 1.5;
+}
+
+.testimonial-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.author-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.author-title {
+  color: #666;
+  font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.testimonial-rating {
+  margin-top: 10px;
+  color: #f39c12;
+}
+
+.star {
+  margin-right: 5px;
+}
+
+/* Slick carousel custom styles */
+.slick-prev:before,
+.slick-next:before {
+  color: #333;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #333;
+}
+
+/* Remove extra padding from the slick slide */
+.slick-slide {
+  padding: 0 !important; /* Remove any padding that slick-slide may add */
+  margin-bottom: 0; /* Ensure no margin is applied to create extra space */
+}
+
+.slick-list {
+  padding-bottom: 0 !important; /* Prevent extra space at the bottom of the slick list */
+}

@@ -1,0 +1,123 @@
+.features-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; /* Larger first column */
+  gap: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: #fff;
+  margin: 0 auto;
+  justify-content: center; /* Centering the content */
+  position: relative; /* Allow the section to move up */
+ margin-top: -15rem;
+
+}
+
+.features-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; /* Centering the content inside each column */
+  animation: slideInFromBottom 1.2s ease-out;
+}
+
+.main-column .features-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0f0f0f;
+  text-decoration: underline;
+  text-decoration-color:#fbc900 ;
+  animation: slideInFromBottom 0.8s ease-out;
+}
+
+.features-heading {
+  font-size: 2.8rem;
+  color: #262638;
+  margin-bottom: 0.5rem;
+  text-align: center; /* Center the heading */
+}
+
+.features-subheading {
+  font-family: 'TT Norms'sans-serif; /* Font family */
+  font-size: 20px; /* Font size */
+  color: #3e414d; /* Text color */
+  margin-bottom: 2rem; /* Space below the subheading */
+  animation: slideInFromBottom 0.8s ease-out; /* Slide from bottom animation */
+  
+}
+
+.view-all-features {
+  background-color: #53e4ac;
+  color: white;
+  border: none;
+  padding: 15px 30px; /* Smaller button */
+  font-size: 1.2rem; /* Smaller font size */
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 1rem auto; /* Center the button */
+}
+
+.view-all-features:hover {
+  background-color: #fbc900;
+  transform: scale(1.05);
+}
+
+.feature-item {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #53e4ac;
+}
+
+.feature-title {
+  color:#262638;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.feature-description {
+  font-size: 1.2rem;
+  color: #414242;
+}
+
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .features-section {
+    grid-template-columns: 1fr; /* Stack columns on mobile */
+    gap: 1.5rem; /* Add more space between the stacked columns */
+    padding: 1rem; /* Reduce padding for smaller screens */
+    margin-top: -5rem;
+  }
+
+  .view-all-features {
+    width: auto; /* Ensure the button doesn't stretch to fill the column */
+  }
+}
