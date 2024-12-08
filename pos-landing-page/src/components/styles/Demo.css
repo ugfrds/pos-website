@@ -1,0 +1,73 @@
+/* Container for the demo section */
+.demo {
+    padding: 3rem 1rem; /* Add padding to the section */
+    background-color: #f9f9f9; /* Light background color */
+  }
+  
+  .container {
+    max-width: 1200px; /* Limit the container's width */
+    margin: 0 auto; /* Center it horizontally */
+  }
+  
+  .demo h2 {
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    text-decoration-color: #fbc900;
+    color: #2b2f3e;
+  } 
+  
+  .demo-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Split into two equal columns */
+    gap: 2rem; /* Space between columns */
+    align-items: center; /* Vertically align the columns */
+  }
+  
+  .demo-description {
+    padding-right: 2rem;
+  }
+  
+  .demo-description h3 {
+    font-size: 1.8rem;
+    color: #2b2f3e;
+    margin-bottom: 1rem;
+  }
+  
+  .demo-description p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #2b2f3e;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-button {
+    background-color: #ff5100; /* Green button */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none; 
+    font-size: 1.2rem;
+    border-radius: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #fbc900; /* Change button color on hover */
+    transform: scale(1.05);
+  }
+  
+  .demo-video iframe {
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 10px; /* Optional rounded corners for the video */
+  }
+  
+  @media (max-width: 768px) {
+    .demo-content {
+      grid-template-columns: 1fr; /* Stack columns on smaller screens */
+      gap: 1rem;
+    }
+  }
+  

@@ -1,0 +1,125 @@
+/* Ensure no extra margin or padding on body */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* NavBar.css */
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; /* Adjust padding as needed */
+  background-color: #FFFAF5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 4rem; /* Increase height for a larger navbar */
+  transition: background-color 0.3s;
+  animation: slideInFromTop 0.5s ease-out; /* Apply sliding animation */
+}
+
+
+/* Optional: Ensure content inside navbar is centered */
+.navbar .logo,
+.navbar .nav-links,
+.navbar .toggle-button {
+  display: flex;
+  align-items: center;
+}
+
+  
+  .dark-mode .navbar {
+    background-color: #333; /* Example dark mode color */
+  }
+  
+  /* styles/NavLinks.css */
+
+.nav-links {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2B2F3E; /* Default color */
+  position: relative;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 1rem; /* Adjust size as needed */
+  transition: color 0.3s; /* Smooth color transition */
+  
+  
+}
+
+.nav-links a.active-link {
+  color: #ff6900; /* Active link color */
+} 
+
+.nav-links a:hover {
+  color: #ff6900; /* Hover color */
+}
+
+.nav-links a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #ff6900; /* Underline color */
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active-link::after {
+  width: 100%; /* Full underline width on hover and active */
+}
+
+  .toggle-button {
+    background-color: #ff6900;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-button:hover {
+    background-color: #fcb900;
+  }
+  
+
+  /* Navbar.css */
+
+/* Global dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Optional: Specific dark mode styles for navbar */
+body.dark-mode .navbar {
+  background-color: #333;
+}
+
+/* Optional: Dark mode styles for other elements */
+body.dark-mode a {
+  color: #ffffff;
+}
+
+body.dark-mode a:hover {
+  color: #ff6900;
+}
+
+/* Continue to define dark mode styles for other components */
