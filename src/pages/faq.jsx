@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import NavBar from '../components/nav';
-import './styles/FAQPage.css';
+import './styles/FaqPage.css';
 import Footer from '../components/Footer';
 const FAQPage = () => {
   const [activeIndex, setActiveIndex] = useState(null);
