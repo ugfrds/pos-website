@@ -52,9 +52,10 @@ const AboutPage = () => {
       <section className="about-section">
         <div className="about-content">
           <div className="about-left">
-            <h3 className="title-underline">About</h3>
             <h2>Our Story</h2>
-            <p>We created this POS system with the aim of helping businesses streamline their operations, manage sales, and increase profits with ease. Our focus is on providing a user-friendly interface with powerful features tailored to different business needs.</p>
+            <p>We created this POS system with the aim of helping businesses streamline their operations, 
+              manage sales, and increase profits with ease. Our focus is on providing a user-friendly interface with 
+              powerful features tailored to different business needs.</p>
             
             <div className="about-columns">
               <div className="about-column">

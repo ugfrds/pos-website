@@ -14,10 +14,10 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <div className="features">
-      <section className="features-section">
+    <div className="features container">
+      <section className="features-section ">
         {/* First Column: Title, Heading, Subheading, Button */}
-        <div className="features-column main-column">
+        <div className="features-column main-column">  
           <div className="features-title">
             <span>🚀</span> Features
           </div>

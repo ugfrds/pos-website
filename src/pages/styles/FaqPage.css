@@ -11,8 +11,7 @@ body {
     text-align: center;
     background-color: #001f3f; /* Navy blue */
     color: #fff;
-    padding: 20px 20px;
-    padding-top: 100px;
+    padding: 30px 20px;
     margin: 0; /* Ensure there's no margin */
      /* Full page height for header */
     display: flex;
@@ -46,10 +45,6 @@ body {
     background-color: #f9f9f9;
 }
 .faq-list {
-    margin-top: 20px;
-    max-width: 1200px;
-    margin: auto;
-     /* Pale pink background for accordion */
     padding: 20px;
     border-radius: 10px;
 }

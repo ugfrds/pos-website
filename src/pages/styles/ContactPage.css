@@ -15,8 +15,7 @@
   .contact-header {
     background-color: #001f3f;
     color: #fff;
-    padding: 50px 0; /* No spaces on sides */
-    padding-top: 100px;
+    padding: 30px 0; /* No spaces on sides */
     text-align: center;
     position: relative;
     z-index: 1;

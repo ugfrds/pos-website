@@ -10,7 +10,7 @@
   
   .footer-container {
     display: flex; 
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
   
@@ -26,10 +26,7 @@
     margin-bottom: 1rem;
   }
   .footer-column p {
-    
-    font-size: 1.2rem;
-    line-height: 2;
-    
+    line-height: 1.6; 
   }
   
   .footer-column ul {
@@ -78,10 +75,4 @@
     color: #007bff;
   }
   
-  .footer-bottom {
-    text-align: center;
-    margin-top: 2rem;
-    border-top: 1px solid #ccc;
-    padding-top: 1rem;
-  }
   

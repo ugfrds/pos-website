@@ -19,10 +19,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 2rem 2rem;
-  position: fixed;
   width: 100%;
-  top: 0;
-  left: 0;
   z-index: 1000;
   background-color: var(--navbar-background);
   color: var(--navbar-brand-color);
@@ -150,7 +147,6 @@
   cursor: pointer;
   color: var(--navbar-toggle-text-color);
   font-size: 16px;
-  margin-right: 60px;
   width: 120px; /* Adjust width as needed */
   transition: background-color 0.3s;
 }
@@ -204,7 +200,6 @@
   }
 
   .theme-toggle {
-    margin-left: 0;
     margin-top: 10px;
   }
 }

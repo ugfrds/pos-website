@@ -157,7 +157,7 @@ const PricingPage = () => {
         <p >Flexible and transparent pricing tailored for your business needs.</p>
       </div>
     <Container className="pb-5">
-      <Nav variant="tabs" className="nav-tabs justify-content-center gap-4 mb-4" onSelect={setActiveTab}>
+      <Nav variant="tabs" className="nav-tabs justify-content-center gap-4 mb-4 fw-medium" onSelect={setActiveTab}>
         <Nav.Item>
           <Nav.Link eventKey="general">General Plans</Nav.Link>
         </Nav.Item>

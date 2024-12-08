@@ -32,14 +32,14 @@ const FAQPage = () => {
   ];
 
   return (
-    < >
+    <>
     <NavBar headerColor={headerColor} color = {color} />
       <div className="faq-header">
         <h1>Frequently Asked Questions</h1>
-        <p>Find answers to the most common questions about our POS system. If you need further assistance, our support team is always available to help.</p>
+        <p className='w-80'>Find answers to the most common questions about our POS system. If you need further assistance, our support team is always available to help.</p>
       </div>
     <div className='faq'>
-      <div className="faq-list">
+      <div className="faq-list container">
         {faqs.map((faq, index) => (
           <div key={index} className={`faq-item ${index === activeIndex ? 'active' : ''}`}>
             <button

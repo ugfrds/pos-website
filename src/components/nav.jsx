@@ -25,8 +25,9 @@ navbarLinks.forEach(link => {
   }, [darkMode, headerColor, color]);
 
   return (
-    <nav className="navbar">
-      <div className="navbar-brand">
+    <nav className="navbar ">
+      <div className='container'>
+      <div className="navbar-brand"> 
         <Link to="/">WebFiles</Link>
       </div>
       <div className={`navbar-menu ${isNavOpen ? 'open' : ''}`}>
@@ -48,6 +49,7 @@ navbarLinks.forEach(link => {
         <span className="theme-toggle-text">{darkMode ? 'Dark' : 'Light'}</span>
         {darkMode ? <FaMoon /> : <FaSun />}
       </button>
+      </div>
     </nav>
   );
 };
